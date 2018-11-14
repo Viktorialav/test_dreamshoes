@@ -1,0 +1,224 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+	font-family: Arial, sans-serif;
+	width: 100%;
+    line-height: 1.2;
+    color: #333333;
+    text-align: center;
+}
+.wrapper {
+	width: 45%;
+	margin: 0 auto;
+}
+header {
+	padding: 11px 0 35px;
+}
+header p, header p a {
+	color: #999999;
+	font-size: 11px;
+}
+header p a:hover {
+	text-decoration: none;
+}
+header img {
+	margin: 33px auto 25px;
+	display: block;
+}
+header nav ul {
+	list-style-type: none;
+}
+header nav ul li {
+	display: inline-block;
+	background-color: #333;
+	margin-right: -5px;
+}
+header nav ul li a {
+	color: #fff;
+	font-size: 11px;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 30px;
+	margin: 0 10px;
+	padding: 0 16px;
+	display: block;
+}
+header nav ul li a:hover {
+	text-decoration: underline;
+} 
+.content h2 {
+	padding-bottom: 30px;
+}
+.content p {
+	font-size: 17px;
+}
+.content p .attention {
+	color: red;
+	font-weight: bold;
+}
+.content p .square {
+	color: #fff;
+	background-color: #333;
+	line-height: 29px;
+	display: inline-block;
+	padding: 0 16px;
+}
+.content .text {
+	margin-top: 20px;
+}
+.content hr {
+	margin: 40px 0;
+}
+.content .flex-container, .content .offer_2 .flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+.content .flex-container > div {
+	width: 50px;
+	height: 50px;
+	background-color: #f8f8f8;
+}
+.content .flex-container > div:nth-child(2n) {
+	background-color: #f0f0f0;
+}
+.content .flex-container > div p {
+	font-size: 17px;
+	font-weight: bold;
+	margin: 16px auto;
+}
+.content .left {
+	float: left;
+	background-color: #f0f0f0;
+}
+.content .left h4, .content .right h4 {
+	border-bottom: solid 2px #db061a;
+	display: inline-block;
+	padding: 5px 0;
+	margin-bottom: 30px;
+}
+.content .left p, .content .right p {
+	margin: 10px 0;
+}
+.content .right {
+	float: right;
+	background-color: #f8f8f8;
+}
+.clearfix {
+	clear: both;
+}
+.content .offer {
+	padding: 30px 0 16px;
+}
+.content .offer p {
+	margin: 15px 0 32px;
+}
+.content .offer img {
+	width: 100%;
+}
+.content .banner {
+	background: url('../img/banner.png') no-repeat;
+	background-size: cover;
+	min-height: 300px;
+	width: 100%;
+}
+.content .banner .information {
+	width: 47%;
+	float: right;
+	padding: 72px 0 0;
+}
+.content .banner .information p {
+	font-family: 'Times New Roman', serif;
+	font-size: 13px;
+	color: #ffff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.content .banner .information hr {
+	margin: 9px auto -4px;
+	width: 75px;
+}
+.content .banner .information h1 {
+	color: #0d78fe;
+	font-size: 85px;
+}
+.content .banner .information h4 {
+	font-size: 18px;
+	color: #818181;
+	margin: -10px 0 20px;
+	letter-spacing: 3px;
+}
+.content .banner .information button {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 17px;
+	background-color: transparent;
+	border: none;
+	font-weight: bold;
+	border-bottom: solid 2px #0c6cea;
+}
+.content .offer_2 .flex-container > div {
+	width: 50%;
+	background: #f8f8f8;
+	text-align: left;
+	min-height: 250px;
+} 
+.content .offer_2 .flex-container .add_offer {
+	padding: 45px 60px 0 28px;
+}
+.content .offer_2 .flex-container div h2 {
+	padding-bottom: 13px;
+}
+.content .offer_2 .flex-container div p {
+	font-size: 15px;
+	font-weight: normal;
+	margin-top: 12px;
+}
+.content .offer_2 .flex-container div hr {
+	width: 19px;
+	margin: 0;
+}
+.content .offer_2 .flex-container div img {
+	width: 100%;
+	height: 100%;
+}
+.content .head {
+	background: #f8f8f8;
+	padding: 40px 10px;
+}
+.content .head hr {
+	width: 19px;
+	margin: 18px auto;
+}
+.content .head h2 {
+	padding: 0;
+}
+.content .head p {
+	font-size: 15px;
+}
+.image_set {
+	margin: 20px 0;
+}
+.image_set .image_left {
+	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 385px;
+}
+.image_set .image_left:not:last-child {
+	margin-bottom: 20px;
+}
+.image_set .image_right {
+	float: right;
+}
+
