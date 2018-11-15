@@ -173,6 +173,7 @@ header nav ul li a:hover {
 	display: flex;
 	flex-direction: row;
 	min-height: 250px;
+	margin: 20px 0;
 }
 .content .offer_2 > div {
 	width: 50%;
@@ -229,6 +230,9 @@ header nav ul li a:hover {
 .image_set .image_right img {
 	max-width: 100%;
 }
+.offer_3 {
+	margin-top: 20px;
+} 
 .offer_3 .left {
 	background: #f8f8f8;
 }
@@ -287,6 +291,7 @@ footer .info {
 	min-height: 90px;
 	flex-direction: row;
 	color: #fff;
+	margin: 20px 0;
 }
 footer .info > div:nth-child(1) {
 	background: #333333;
@@ -297,11 +302,33 @@ footer .info > div:nth-child(1) {
 footer .info > div:nth-child(2) {
 	background: #484848;
 	width: 33%;
+	padding: 17px 30px;
+}
+footer .info > div:nth-child(2) > img {
+	float: left;
+	margin-top: 20px;
+}
+footer .info > div:nth-child(2) > span {
+	float: right;
 }
 footer .info > div:nth-child(3) {
 	background: #c7161f;
 	width: 27%;
 	padding-top: 18px;
+}
+footer .text {
+	font-size: 11px;
+	color: #999999;
+	padding: 18px 90px 54px;
+}
+footer .text a {
+	color: #999999;
+}
+footer .text span {
+	color: red;
+}
+footer .text a:hover {
+	text-decoration: none;
 }
 
 @media screen and (max-width: 812px) {
