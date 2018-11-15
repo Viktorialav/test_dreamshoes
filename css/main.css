@@ -16,7 +16,8 @@ body {
     text-align: center;
 }
 .wrapper {
-	width: 45%;
+	max-width: 603px;
+	width: 100%;
 	margin: 0 auto;
 }
 header {
@@ -77,14 +78,15 @@ header nav ul li a:hover {
 .content hr {
 	margin: 40px 0;
 }
-.content .flex-container, .content .offer_2 .flex-container {
+.content .flex-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin: 20px 0;
 }
 .content .flex-container > div {
-	width: 50px;
+	max-width: 50px;
+	width: 100%;
 	height: 50px;
 	background-color: #f8f8f8;
 }
@@ -123,7 +125,8 @@ header nav ul li a:hover {
 	margin: 15px 0 32px;
 }
 .content .offer img {
-	width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 .content .banner {
 	background: url('../img/banner.png') no-repeat;
@@ -132,7 +135,7 @@ header nav ul li a:hover {
 	width: 100%;
 }
 .content .banner .information {
-	width: 47%;
+	max-width: 47%;
 	float: right;
 	padding: 72px 0 0;
 }
@@ -166,30 +169,32 @@ header nav ul li a:hover {
 	font-weight: bold;
 	border-bottom: solid 2px #0c6cea;
 }
-.content .offer_2 .flex-container > div {
+.content .offer_2 {
+	display: flex;
+	flex-direction: row;
+	min-height: 250px;
+}
+.content .offer_2 > div {
 	width: 50%;
 	background: #f8f8f8;
-	text-align: left;
-	min-height: 250px;
+	text-align: left;	
 } 
-.content .offer_2 .flex-container .add_offer {
-	padding: 45px 60px 0 28px;
+.content .offer_2 .add_offer {
+	padding: 45px 60px 45px 30px;
 }
-.content .offer_2 .flex-container div h2 {
-	padding-bottom: 13px;
+.content .offer_2 h2 {
+	padding-bottom: 10px;
 }
-.content .offer_2 .flex-container div p {
+.content .offer_2 p {
 	font-size: 15px;
-	font-weight: normal;
-	margin-top: 12px;
 }
-.content .offer_2 .flex-container div hr {
-	width: 19px;
-	margin: 0;
-}
-.content .offer_2 .flex-container div img {
+.content .offer_2 img {
 	width: 100%;
 	height: 100%;
+}
+.content .offer_2 hr {
+	width: 19px;
+	margin: 0 0 10px;
 }
 .content .head {
 	background: #f8f8f8;
@@ -220,5 +225,107 @@ header nav ul li a:hover {
 }
 .image_set .image_right {
 	float: right;
+}
+.image_set .image_right img {
+	max-width: 100%;
+}
+.offer_3 .left {
+	background: #f8f8f8;
+}
+.offer_3 .right {
+	background: #f0f0f0;
+}
+.offer_3 h4 {
+	text-transform: uppercase;
+}
+.advantages {
+	display: flex;
+	flex-direction: row;
+	min-height: 60px;
+	margin: 20px 10px;
+}
+.advantages > div {
+	width: 25%;
+	background: url('../img/ico.png') no-repeat left center;
+	border-right: solid 1px #e5e5e5;
+	margin: 0 8px;
+}
+.advantages div img {
+	display: inline-block;
+}
+.advantages div span {
+	font-size: 13px;
+	display: inline-block;
+	padding: 13px 0 0 48px;
+	text-align: left;
+}
+.advantages > div:nth-child(2) {
+	background: url('../img/ico2.png') no-repeat left center;
+}
+.advantages > div:nth-child(3) {
+	background: url('../img/ico3.png') no-repeat left center;
+}
+.advantages > div:nth-child(4) {
+	background: url('../img/ico4.png') no-repeat left center;
+	border: none;
+}
+.brands {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.brands > div {
+	min-height: 80px;
+	width: 24.75%;
+	background-color: #f8f8f8;
+	margin-bottom: 0.25%;
+	padding-top: 20px;
+}
+footer .info {
+	display: flex;
+	min-height: 90px;
+	flex-direction: row;
+	color: #fff;
+}
+footer .info > div:nth-child(1) {
+	background: #333333;
+	width: 40%;
+	text-align: left;
+	padding: 18px 23px;
+}
+footer .info > div:nth-child(2) {
+	background: #484848;
+	width: 33%;
+}
+footer .info > div:nth-child(3) {
+	background: #c7161f;
+	width: 27%;
+	padding-top: 18px;
+}
+
+@media screen and (max-width: 812px) {
+	.content .left, .content .right {
+		float: none;
+		width: 100%;
+	}
+	.content .flex-container {
+		flex-wrap: wrap;
+	}
+	.content .banner .information h1 {
+		font-size: 50px;
+	}
+	.content .offer_2 {
+		flex-direction: column;
+	}
+	.content .offer_2 > div {
+		width: 100%;
+	}
+	.image_set .image_left, .image_set .image_right {
+		float: none;
+	}
+	.advantages {
+		flex-wrap: wrap;
+	}
 }
 
